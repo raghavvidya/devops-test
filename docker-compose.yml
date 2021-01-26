@@ -1,0 +1,17 @@
+version: '3.2'
+services:
+  backend1:
+      build: ./app
+      volumes:
+        - '/root/devops-test/app'
+  backend2:
+      build: ./app
+      volumes:
+        - '/root/devops-test/app'
+
+  loadbalancer:
+      build: ./nginx
+      ports:
+          - '8081:80'
+volumes:
+  app:
