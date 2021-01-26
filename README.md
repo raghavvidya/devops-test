@@ -44,7 +44,7 @@ Login to the system
 
 ```   
    cd /root
-   git clone -b feature-test https://github.com/raghavvidya/devops-test.git
+   git clone https://github.com/raghavvidya/devops-test.git
    cd devops-test
    docker-compose up
 ```
